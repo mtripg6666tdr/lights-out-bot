@@ -1,0 +1,28 @@
+{
+  "name": "lights-out-bot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "swc -d ./dist ./src",
+    "watch": "swc -w -d ./dist ./src",
+    "cleanup": "rimraf dist",
+    "start": "node dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.1",
+    "swc": "^1.0.11",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "oceanic.js": "^1.7.1"
+  }
+}
